@@ -20,12 +20,17 @@ function displayMessage(message, isValid) {
         icon.textContent = '✔️';              // Ícone de sucesso
         icon.classList.add('valid');
         icon.classList.remove('invalid');
+
+        errorMessage.style.color = 'green'; // Cor verde para mensagem válida
+
     } else {
         emailInput.classList.add('invalid');  // Estilo de erro
         emailInput.classList.remove('valid');
         icon.textContent = '❌';                // Ícone de erro
         icon.classList.add('invalid');
         icon.classList.remove('valid');
+
+        errorMessage.style.color = 'red'; // Cor vermelha para mensagem inválida
     }
 }
 
