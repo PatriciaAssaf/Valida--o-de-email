@@ -102,3 +102,12 @@ label {
     color: red; /* Cor do texto da mensagem de erro */
     line-height: 1.8; /* Aumenta o espaçamento entre as linhas da mensagem */
 }
+
+/* Ajustes específicos para telas menores, como celulares */
+@media (max-width: 768px) {
+    input {
+        padding: 10px; /* Reduz o padding */
+        font-size: 16px; /* Fonte um pouco menor */
+        width: 90%; /* Reduz um pouco a largura */
+    }
+}
