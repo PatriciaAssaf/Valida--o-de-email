@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de E-mail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validação de E-mail</h1>
+        <form id="emailForm">
+            <label for="email">Digite seu e-mail:</label>
+            <div class="input-container">
+                <input type="text" id="email" name="email" placeholder="exemplo@dominio.com">
+                <span id="icon" class="icon"></span> <!-- Ícone dinâmico de erro/sucesso -->
+            </div>
+            <button type="submit">Enviar</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

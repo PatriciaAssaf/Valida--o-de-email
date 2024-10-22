@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.6; /* Aumenta a distância entre as linhas */
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    line-height: 1.7;  /* Define o espaçamento entre as linhas dentro do formulário */
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+input.valid {
+    border-color: green; /* Verde quando válido */
+}
+
+input.invalid {
+    border-color: red; /* Vermelho quando inválido */
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: transparent;
+}
+
+.icon.valid {
+    color: green; /* Ícone verde */
+}
+
+.icon.invalid {
+    color: red; /* Ícone vermelho */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;  /* Espaço adicional acima do botão */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-size: 16px;
+    line-height: 1.8; /* Aumenta a distância entre o texto do rótulo */
+}
+
+#error-message {
+    font-size: 16px;
+    margin-top: 10px;
+    color: red;
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas da mensagem de erro */
+}
