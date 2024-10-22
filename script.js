@@ -11,7 +11,7 @@ function displayMessage(message, isValid) {
     const emailInput = document.getElementById('email'); // Campo de entrada de e-mail
     const icon = document.getElementById('icon'); // Ícone dinâmico
 
-    errorMessage.textContent = message; // Atualiza a mensagem exibida
+    errorMessage.innerHTML = message; // Atualiza a mensagem exibida
 
     // Atualiza o estilo do campo e do ícone com base na validade do e-mail
     if (isValid) {
@@ -45,7 +45,7 @@ function handleFormSubmit(event) {
     if (isValid) {
         displayMessage("E-mail válido! 🎉", true);
     } else {
-        displayMessage("E-mail inválido. Exemplo: exemplo@dominio.com", false);
+        displayMessage("E-mail inválido.<br>Exemplo: exemplo@dominio.com", false);
     }
 }
 
