@@ -1,90 +1,104 @@
+/* Zera a margem e o padding de todos os elementos, e ajusta o box-sizing para incluir bordas e padding no cálculo das dimensões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Define estilo para o body da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    line-height: 1.6; /* Aumenta a distância entre as linhas */
+    font-family: Arial, sans-serif; /* Fonte padrão da página */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da tela inteira */
+    line-height: 1.6; /* Define o espaçamento entre as linhas de texto no body */
 }
 
+/* Estilo para o contêiner principal que envolve o formulário */
 .container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 450px;
-    text-align: center;
-    line-height: 1.7;  /* Define o espaçamento entre as linhas dentro do formulário */
+    background-color: white; /* Fundo branco */
+    padding: 40px; /* Espaçamento interno (padding) de 40px */
+    border-radius: 8px; /* Borda levemente arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do contêiner */
+    width: 450px; /* Largura fixa do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+    line-height: 1.7;  /* Aumenta o espaçamento entre linhas dentro do contêiner */
 }
 
+/* Agrupa o campo de e-mail e o ícone de feedback */
 .input-container {
-    position: relative;
-    margin-bottom: 10px;
+    position: relative; /* Necessário para posicionar o ícone dentro da div */
+    margin-bottom: 10px; /* Espaçamento inferior entre o campo e o botão */
 }
 
+/* Estilo para o campo de input (entrada de e-mail) */
 input {
-    padding: 15px;
-    width: 100%;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 18px;
+    padding: 15px; /* Espaçamento interno do campo */
+    width: 100%; /* O input ocupa toda a largura da div pai */
+    border: 2px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
 }
 
+/* Estilo para quando o campo de e-mail é válido */
 input.valid {
-    border-color: green; /* Verde quando válido */
+    border-color: green; /* Borda verde se válido */
 }
 
+/* Estilo para quando o campo de e-mail é inválido */
 input.invalid {
-    border-color: red; /* Vermelho quando inválido */
+    border-color: red; /* Borda vermelha se inválido */
 }
 
+/* Estilo para o ícone dinâmico dentro do campo de e-mail */
 .icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: transparent;
+    position: absolute; /* Posiciona o ícone em relação ao input */
+    top: 50%; /* Centraliza verticalmente */
+    right: 10px; /* Afasta o ícone da borda direita */
+    transform: translateY(-50%); /* Centraliza o ícone verticalmente */
+    font-size: 20px; /* Tamanho do ícone */
+    color: transparent; /* Inicialmente invisível */
 }
 
+/* Estilo para o ícone quando o e-mail é válido */
 .icon.valid {
-    color: green; /* Ícone verde */
+    color: green; /* Ícone verde quando válido */
 }
 
+/* Estilo para o ícone quando o e-mail é inválido */
 .icon.invalid {
-    color: red; /* Ícone vermelho */
+    color: red; /* Ícone vermelho quando inválido */
 }
 
+/* Estilo para o botão de envio */
 button {
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;  /* Espaço adicional acima do botão */
+    padding: 15px 30px; /* Padding interno do botão */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Apresenta o cursor de "mãozinha" ao passar sobre o botão */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-top: 20px;  /* Espaçamento superior entre o botão e o campo de entrada */
 }
 
+/* Efeito hover ao passar o mouse sobre o botão */
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
 }
 
+/* Estilo para os rótulos (labels) do formulário */
 label {
-    font-size: 16px;
-    line-height: 1.8; /* Aumenta a distância entre o texto do rótulo */
+    font-size: 16px; /* Tamanho da fonte do rótulo */
+    line-height: 1.8; /* Espaçamento entre o texto do rótulo */
 }
 
+/* Estilo para a mensagem de erro */
 #error-message {
-    font-size: 16px;
-    margin-top: 10px;
-    color: red;
-    line-height: 1.8; /* Aumenta o espaçamento entre as linhas da mensagem de erro */
+    font-size: 16px; /* Tamanho da fonte da mensagem de erro */
+    margin-top: 10px; /* Espaçamento superior entre o erro e os elementos acima */
+    color: red; /* Cor do texto da mensagem de erro */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas da mensagem */
 }
