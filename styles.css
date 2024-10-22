@@ -110,7 +110,7 @@ label {
         padding: 30px; /* Espaçamento interno (padding) de 40px */
         border-radius: 8px; /* Borda levemente arredondada */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do contêiner */
-        width: 400px; /* Largura fixa do contêiner */
+        width: 300px; /* Largura fixa do contêiner */
         text-align: center; /* Alinha o texto ao centro */
         line-height: 1.7;  /* Aumenta o espaçamento entre linhas dentro do contêiner */
     }
